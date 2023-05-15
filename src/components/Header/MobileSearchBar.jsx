@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { CgSearch } from 'react-icons/cg';
 import { Colors, Devices } from '../Theme';
 
-const SearchBarE1 = styled.article`
+const SearchBarEl = styled.article`
   background-color: ${Colors.Background};
   padding: 0.5rem 1rem;
   gap: 0.5rem;
@@ -48,7 +48,7 @@ const HideSearchBar = styled.span`
 
 export default function MobileSearchBar({ SearchIsOpen, setSearchIsOpen }) {
   return (
-    <SearchBarE1>
+    <SearchBarEl>
       <SearchBarBg>
         <CgSearch />
         <SearchInput placeholder='Search collectiables adnd collections' />
@@ -59,6 +59,6 @@ export default function MobileSearchBar({ SearchIsOpen, setSearchIsOpen }) {
         }}>
         Hide
       </HideSearchBar>
-    </SearchBarE1>
+    </SearchBarEl>
   );
 }

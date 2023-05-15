@@ -8,7 +8,7 @@ import SearchBar from './Header/SearchBar';
 import MobileSearchBar from './Header/MobileSearchBar';
 import Button from './styled/Button.styled';
 
-const HeaderE1 = styled.article`
+const HeaderEl = styled.article`
   color: ${Colors.White};
   z-index: 10;
   display: flex;
@@ -90,7 +90,7 @@ export default function Header({ mobileMenu }) {
     setMobileMenuIsOpen(!MobileMenuIsOpen);
   }
   return (
-    <HeaderE1>
+    <HeaderEl>
       <MenuIcon>
         {MobileMenuIsOpen ? (
           <IoMdClose
@@ -140,6 +140,6 @@ export default function Header({ mobileMenu }) {
           }}
         />
       </SearchIcon>
-    </HeaderE1>
+    </HeaderEl>
   );
 }

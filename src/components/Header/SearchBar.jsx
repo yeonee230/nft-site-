@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { CgSearch } from 'react-icons/cg';
 import { Colors, Devices } from '../Theme';
 
-const SearchBarE1 = styled.article`
+const SearchBarEl = styled.article`
   background-color: ${Colors.Background};
   padding: 0.5rem 1rem;
   gap: 0.5rem;
@@ -41,11 +41,11 @@ const SearchInput = styled.input`
 
 export default function SearchBar() {
   return (
-    <SearchBarE1>
+    <SearchBarEl>
       <SearchBarBg>
         <CgSearch />
         <SearchInput placeholder='Search collectiables adnd collections' />
       </SearchBarBg>
-    </SearchBarE1>
+    </SearchBarEl>
   );
 }

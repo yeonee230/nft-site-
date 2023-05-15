@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Button from './styled/Button.styled';
 import SearchBar from './Header/SearchBar';
 
-const IndexEl = styled.article`
+const HomeEl = styled.article`
   height: 100vh;
   width: 100%;
   display: flex;
@@ -62,9 +62,9 @@ const Github = styled.a`
 
 const Site = styled(Github)``;
 
-export default function Index() {
+export default function Home() {
   return (
-    <IndexEl>
+    <HomeEl>
       <Head>
         <title>NFT site</title>
         <meta
@@ -76,6 +76,6 @@ export default function Index() {
           href='/favicon.png'
         />
       </Head>
-    </IndexEl>
+    </HomeEl>
   );
 }
