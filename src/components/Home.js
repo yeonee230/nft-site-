@@ -12,6 +12,7 @@ const HomeEl = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ${Colors.White};
 
   padding: 0 2rem;
 
